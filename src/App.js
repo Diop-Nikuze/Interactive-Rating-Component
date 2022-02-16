@@ -3,13 +3,17 @@ import "./App.css";
 function App() {
   return (
     <div
+      className="container-posts"
       style={{
-        display: "flex",
         marginTop: "70px",
         width: "100%",
+        display: "flex",
       }}
     >
-      <div style={{ height: "550px", width: "60%", position: "relative" }}>
+      <div
+        className="firstPost"
+        style={{ height: "552px", width: "60%", position: "relative" }}
+      >
         <img
           src="./images/imagesix.jpg"
           alt=""
@@ -20,7 +24,7 @@ function App() {
             position: "absolute",
             bottom: "0",
             color: "white",
-            fontSize: "22px",
+            fontSize: "20px",
             padding: "20px",
           }}
         >
@@ -29,11 +33,13 @@ function App() {
         </div>
       </div>
 
-      <div style={{ width: "40%" }}>
+      <div className="container-secondThirdPost" style={{ width: "40%" }}>
         <div
+          className="secondPost"
           style={{
             height: "275px",
             position: "relative",
+            margin: "1px 0 0 1px",
           }}
         >
           <img
@@ -46,14 +52,21 @@ function App() {
               position: "absolute",
               bottom: "0",
               color: "white",
-              fontSize: "22px",
+              fontSize: "20px",
               padding: "20px",
             }}
           >
-            Incroyable, les Gazelles remporte la coupe VIVA Champions
+            Incroyable, les Gazelles remportent la coupe VIVA Champions
           </div>
         </div>
-        <div style={{ height: "275px", width: "100%", position: "relative" }}>
+        <div
+          className="thirdPost"
+          style={{
+            height: "275px",
+            position: "relative",
+            margin: "1px 0 0 1px",
+          }}
+        >
           <img
             src="./images/imagequatres.jpg"
             alt=""
@@ -64,7 +77,7 @@ function App() {
               position: "absolute",
               bottom: "0",
               color: "white",
-              fontSize: "22px",
+              fontSize: "20px",
               padding: "20px",
             }}
           >

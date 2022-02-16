@@ -1,9 +1,18 @@
-@media only screen and (max-width: 767px) {
-  .news-posts-container {
-    display: block;
+/* @media only screen and (min-width: 768px) {
+  .container-posts {
+    display: flex;
   }
 
-  .twoposts {
-    display: inline-block;
+  .container-posts .firstPost {
+    width: 60%;
+    height: 550px;
   }
-}
+
+  .container-posts .container-secondThirdPost {
+    flex-direction: column;
+  }
+
+  .secondPost {
+    width: 40%;
+  }
+} */
