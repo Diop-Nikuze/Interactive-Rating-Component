@@ -1,43 +1,45 @@
 import "./App.css";
+import axios from "axios";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    axios.get("https://fortheloveofthegame.herokuapp.com/posts").then((res) => {
+      setData(res.data);
+    });
+  }, []);
+
+  const sortedPosts = data.sort(
+    (prevPost, nextPost) =>
+      new Date(nextPost.published_at) - new Date(prevPost.published_at)
+  );
+
   return (
     <div className="box-reportage">
-      <a href="www.jimbere.org" className="boxnews">
-        <h2>
-          Un partenariat de grand prestige avec un contrat colossal pour la
-          ligue nationale de Basketball
-        </h2>
-        <img src="./images/imagesix.jpg" alt="" />
-      </a>
+      {sortedPosts.slice(0, 3).map((item, id) => (
+        <a
+          key={id}
+          href="www.jimbere.org"
+          className={id === 0 ? "boxnews" : "boxnews boxnewsmall"}
+        >
+          <h2
+            style={{
+              padding: "4px 6px",
+              background: "#006159",
+              display: "inline-block",
+            }}
+          >
+            {item.category}
+          </h2>
+          <h2>{item.title}</h2>
 
-      <a href="www.jimbere.org" className="boxnews boxnewsmall">
-        <h2>Incroyable, les Gazelles remporte la coupe VIVA Champions</h2>
-        <img src="./images/imagecinq.jpg" alt="" />
-      </a>
-      <a href="www.jimbere.org" className="boxnews boxnewsmall">
-        <h2>FEBABU en collaboration avec Brarudi organisent Shoota na Viva</h2>
-        <img src="./images/imagequatres.jpg" alt="" />
-      </a>
+          <img src={item.image.formats.medium.url} alt="" />
+        </a>
+      ))}
     </div>
   );
 }
 
 export default App;
-
-// <div className="container">
-//   <a href="www.jimbere.org" className="boxnews">
-//     <h2>Incroyable mais vrai</h2>
-//     <img src="./images/imagesix.jpg" alt="" />
-//   </a>
-//   <div className="container-slidePosts">
-//     <a href="www.jimbere.org" className="boxnews boxnewsmall">
-//       <h2>Incroyable mais vrai</h2>
-//       <img src="./images/imagecinq.jpg" alt="" />
-//     </a>
-//     <a href="www.jimbere.org" className="boxnews boxnewsmall">
-//       <h2>Incroyable mais vrai</h2>
-//       <img src="./images/imagequatres.jpg" alt="" />
-//     </a>
-//   </div>
-// </div>
