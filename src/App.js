@@ -5,7 +5,7 @@ import { useColorModeValue } from "@chakra-ui/react";
 
 import vivamalt from "./image/vivamalt.jpg";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 
 function App() {
   const [data, setData] = useState([]);
