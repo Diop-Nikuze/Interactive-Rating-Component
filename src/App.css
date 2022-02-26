@@ -3,7 +3,7 @@
 }
 
 .ads {
-  width: 350px;
+  width: 400px;
 }
 
 .ads-img {
@@ -12,7 +12,7 @@
 }
 
 .box-container {
-  width: 80%;
+  /* width: 90%; */
   display: flex;
   align-items: center;
 }
