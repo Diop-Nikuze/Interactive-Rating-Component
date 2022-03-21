@@ -41,8 +41,6 @@ const Stars = ({ onSubmitPress, setRating }) => {
             w="2.3rem"
             h="2.3rem"
             color="white"
-            lineHeight="-2.3rem"
-            boxSizing="border-box"
           >
             {star}
           </Button>
