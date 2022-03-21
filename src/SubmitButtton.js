@@ -15,7 +15,7 @@ const SubmitButtton = ({ disabled, onSubmitPress }) => {
         _hover={{ backgroundColor: "white", color: "hsl(25, 97%, 53%)" }}
         transition="ease-in-out .2s"
         disabled={disabled}
-        color={disabled ? "hsl(25, 97%, 53%)" : "inherit"}
+        color={disabled ? "hsl(25, 97%, 53%)" : "white"}
       >
         Submit
       </Button>

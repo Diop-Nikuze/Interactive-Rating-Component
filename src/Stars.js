@@ -40,6 +40,7 @@ const Stars = ({ onSubmitPress, setRating }) => {
             p={{ base: "1.3rem", md: "1.7rem" }}
             w="2.3rem"
             h="2.3rem"
+            color="white"
           >
             {star}
           </Button>

@@ -20,7 +20,13 @@ const FeedbackCard = ({ rating }) => {
           </Text>
         </Box>
         <Box>
-          <Text fontSize="25px" fontWeight="700" mb=".7rem" mt="2rem">
+          <Text
+            fontSize="25px"
+            fontWeight="700"
+            mb=".7rem"
+            mt="2rem"
+            color="white"
+          >
             Thank You!
           </Text>
           <Text color="hsl(216, 12%, 54%)" lineHeight="1.6">

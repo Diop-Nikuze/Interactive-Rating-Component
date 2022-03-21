@@ -6,6 +6,7 @@ const Footer = () => {
       textAlign="center"
       fontSize={{ base: 10, sm: 10, md: 13, lg: 13 }}
       mt={10}
+      color="white"
     >
       Challenge by{" "}
       <a
