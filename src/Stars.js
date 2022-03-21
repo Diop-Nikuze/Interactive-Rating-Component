@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Box, Button } from "@chakra-ui/react";
+import { Box, Button, HStack } from "@chakra-ui/react";
 import SubmitButtton from "./SubmitButtton";
 
 const Stars = ({ onSubmitPress, setRating }) => {
@@ -27,25 +27,28 @@ const Stars = ({ onSubmitPress, setRating }) => {
 
   return (
     <Box>
-      <Box my="30px" d="flex" justifyContent="space-between">
+      <HStack justifyContent="space-between" my="30px" textAlign="center">
         {stars.map((star, i) => (
           <Button
             key={i}
             bgColor={color.element === i ? color.active : color.default}
             onClick={(e) => onButtonPress(e, i)}
             value={star}
-            _focus={{ outline: "none" }}
-            _hover={{ backgroundColor: "hsl(217, 12%, 63%)" }}
-            borderRadius="100%"
-            p={{ base: "1.3rem", md: "1.7rem" }}
-            w="2.3rem"
-            h="2.3rem"
-            color="white"
+            lineHeight="0"
+            // display="flex"
+            // alignItems="centrer"
+            // _focus={{ outline: "none" }}
+            // _hover={{ backgroundColor: "hsl(217, 12%, 63%)" }}
+            // borderRadius="100%"
+            // p={{ base: "1.3rem", md: "1.7rem" }}
+            // w="2.3rem"
+            // h="20px"
+            // color="white"
           >
             {star}
           </Button>
         ))}
-      </Box>
+      </HStack>
       <SubmitButtton disabled={disabled} onSubmitPress={onSubmitPress} />
     </Box>
   );
