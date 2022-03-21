@@ -26,8 +26,8 @@ const Stars = ({ onSubmitPress, setRating }) => {
   };
 
   return (
-    <Box>
-      <SimpleGrid columns={5} my="30px" gap={3}>
+    <Box Box>
+      <Box my="30px" d="flex" justifyContent="space-between">
         {stars.map((star, i) => (
           <Button
             key={i}
@@ -37,16 +37,17 @@ const Stars = ({ onSubmitPress, setRating }) => {
             _focus={{ outline: "none" }}
             _hover={{ backgroundColor: "hsl(217, 12%, 63%)" }}
             borderRadius="100%"
-            p="1.7rem"
-            w="2.5rem"
-            h="2.5rem"
+            p={{ base: "1.3rem", md: "1.7rem" }}
+            w="2.3rem"
+            h="2.3rem"
             color="white"
             textAlign="center"
+            border="none"
           >
             {star}
           </Button>
         ))}
-      </SimpleGrid>
+      </Box>
       <SubmitButtton disabled={disabled} onSubmitPress={onSubmitPress} />
     </Box>
   );
