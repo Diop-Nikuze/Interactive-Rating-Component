@@ -35,11 +35,10 @@ const Stars = ({ onSubmitPress, setRating }) => {
             onClick={(e) => onButtonPress(e, i)}
             value={star}
             lineHeight="0"
-            _focus={{ outline: "none" }}
-            _hover={{ backgroundColor: "hsl(217, 12%, 63%)" }}
+            _focus={{ outline: 0 }}
+            _hover={{ backgroundColor: "none" }}
             borderRadius="100%"
             color="white"
-            boxShadow="none"
           >
             {star}
           </Button>
