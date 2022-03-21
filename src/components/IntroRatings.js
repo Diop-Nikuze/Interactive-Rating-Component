@@ -1,5 +1,5 @@
 import { Box, Image, Heading, Text } from "@chakra-ui/react";
-import IconStar from "./image/icon-star.svg";
+import IconStar from "../image/icon-star.svg";
 
 const IntroRatings = () => {
   return (

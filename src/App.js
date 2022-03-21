@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { ChakraProvider } from "@chakra-ui/react";
-import RatingsCard from "./RatingsCard";
-import FeedbackCard from "./FeedbackCard";
-import Footer from "./Footer";
+import RatingsCard from "./components/RatingsCard";
+import FeedbackCard from "./components/FeedbackCard";
+import Footer from "./components/Footer";
 import "@fontsource/overpass/400.css";
 import "@fontsource/overpass/700.css";
 import theme from "./theme/theme";

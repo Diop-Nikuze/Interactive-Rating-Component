@@ -1,5 +1,5 @@
 import { Box, Image, Text, VStack } from "@chakra-ui/react";
-import thanksImage from "./image/illustration-thank-you.svg";
+import thanksImage from "../image/illustration-thank-you.svg";
 
 const FeedbackCard = ({ rating }) => {
   return (
