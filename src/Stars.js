@@ -37,9 +37,9 @@ const Stars = ({ onSubmitPress, setRating }) => {
             _focus={{ outline: "none" }}
             _hover={{ backgroundColor: "hsl(217, 12%, 63%)" }}
             borderRadius="100%"
-            p={{ base: "1.3rem", md: "1.7rem" }}
-            w="2.3rem"
-            h="2.3rem"
+            p="1.7rem"
+            w="2.5rem"
+            h="2.5rem"
             color="white"
             textAlign="center"
           >
