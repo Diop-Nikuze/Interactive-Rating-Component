@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Box, SimpleGrid, Button } from "@chakra-ui/react";
+import { Box, Button } from "@chakra-ui/react";
 import SubmitButtton from "./SubmitButtton";
 
 const Stars = ({ onSubmitPress, setRating }) => {
@@ -41,8 +41,7 @@ const Stars = ({ onSubmitPress, setRating }) => {
             w="2.3rem"
             h="2.3rem"
             color="white"
-            textAlign="center"
-            lineHeight="2.3rem"
+            lineHeight="-2.3rem"
             boxSizing="border-box"
           >
             {star}
