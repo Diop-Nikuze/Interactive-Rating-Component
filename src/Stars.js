@@ -26,7 +26,7 @@ const Stars = ({ onSubmitPress, setRating }) => {
   };
 
   return (
-    <Box Box>
+    <Box>
       <Box my="30px" d="flex" justifyContent="space-between">
         {stars.map((star, i) => (
           <Button
@@ -42,7 +42,8 @@ const Stars = ({ onSubmitPress, setRating }) => {
             h="2.3rem"
             color="white"
             textAlign="center"
-            border="none"
+            lineHeight="2.3rem"
+            boxSizing="border-box"
           >
             {star}
           </Button>
