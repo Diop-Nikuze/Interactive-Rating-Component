@@ -17,7 +17,7 @@ function App() {
   return (
     <ChakraProvider theme={theme}>
       {submitBtn ? (
-        <FeedbackCard rating={rating} />
+        <FeedbackCard rating={rating} setSubmitBtn={setSubmitBtn} />
       ) : (
         <RatingsCard onSubmitPress={onSubmitPress} setRating={setRating} />
       )}

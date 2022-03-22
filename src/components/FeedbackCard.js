@@ -1,7 +1,7 @@
-import { Box, Image, Text, VStack } from "@chakra-ui/react";
+import { Box, Image, Text, VStack, Button } from "@chakra-ui/react";
 import thanksImage from "../image/illustration-thank-you.svg";
 
-const FeedbackCard = ({ rating }) => {
+const FeedbackCard = ({ rating, setSubmitBtn }) => {
   return (
     <Box className="card" maxW={{ base: "300px", md: "420px" }}>
       <Box textAlign="center">
@@ -35,6 +35,24 @@ const FeedbackCard = ({ rating }) => {
           </Text>
         </Box>
       </Box>
+
+      <Button
+        type="submit"
+        mt="30px"
+        onClick={() => setSubmitBtn(false)}
+        _focus={{ outline: "none" }}
+        w="full"
+        borderRadius="100px"
+        textTransform="uppercase"
+        fontWeight="700"
+        letterSpacing={2}
+        backgroundColor="hsl(25, 97%, 53%)"
+        _hover={{ backgroundColor: "white", color: "hsl(25, 97%, 53%)" }}
+        transition="ease-in-out .2s"
+        color="white"
+      >
+        Rate Again
+      </Button>
     </Box>
   );
 };

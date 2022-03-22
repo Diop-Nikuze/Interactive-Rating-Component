@@ -4,7 +4,7 @@ import Stars from "./Stars";
 
 const RatingsCard = ({ onSubmitPress, setRating }) => {
   return (
-    <Box className="card" maxW={{ base: "300px", md: "350px" }}>
+    <Box className="card" maxW={{ base: "300px", md: "430px" }}>
       <IntroRatings />
       <Stars onSubmitPress={onSubmitPress} setRating={setRating} />
     </Box>
